@@ -1,7 +1,7 @@
 export interface HistoricEvent {
-  year: number;
-  title: string;
-  description: string;
-  referenceLink: string;
-  tag: string;
+  Year: number;
+  Title: string;
+  Description: string;
+  Reference: string;
+  Tag: string;
 }
