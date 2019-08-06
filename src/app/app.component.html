@@ -1,6 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="timeline">
-  <app-event-card *ngFor="let event of events" [historicEvent]="event"></app-event-card>
+  <app-event-card *ngFor="let event of events; let i = index" [index]="i" [historicEvent]="event"></app-event-card>
 </div>
 
 <router-outlet></router-outlet>
