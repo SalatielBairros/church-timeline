@@ -1,0 +1,9 @@
+<div class="container left" *ngIf="historicEvent != null">
+  <div class="content">
+    <span class="year">{{historicEvent.year}}</span>
+    <span class="tag">{{historicEvent.tag}}</span>
+    <h2 class="title">{{historicEvent.title}}</h2>
+    <p class="description">{{historicEvent.description}}</p>
+    <a href="{{historicEvent.referenceLink}}" target="_blank" class="reference-link">Saiba mais</a>
+  </div>
+</div>
