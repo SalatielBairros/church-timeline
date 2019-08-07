@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Timeline História da Igreja</title>
@@ -7,8 +8,36 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="stylesheet" href="styles.df460b2a5d52cc9f24c8.css"></head>
+<link rel="stylesheet" href="styles.535bd9e8d9070d8613b2.css"></head>
+
 <body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Timeline</a>
+    <a href="#">Material</a>
+    <a href="#">Sobre</a>
+    <a href="https://medium.com/salatiel-bairros/" class="bottom" target="_blank">Salatiel Bairros</a>
+  </div>
+
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </div>
+
+  <h1 class="page-title">Timeline Cristianismo</h1>
+
   <app-root></app-root>
-<script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="polyfills.dc17a00c98c802d9d117.js"></script><script type="text/javascript" src="main.d7a5259752bb95c1d608.js"></script></body>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+<script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="polyfills.dc17a00c98c802d9d117.js"></script><script type="text/javascript" src="main.ff9f0ae11c98b5002327.js"></script></body>
+
 </html>

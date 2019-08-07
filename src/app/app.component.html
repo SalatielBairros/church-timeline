@@ -1,4 +1,10 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<form class="search-form">
+  <input type="text" placeholder="Palavra-chave" class="search">
+  <input type="number" placeholder="Início" class="year">
+  <input type="number" max="2020" placeholder="Fim" class="year">
+  <input type="button" value="Filtrar" class="button">
+</form>
+
 <div class="timeline">
   <app-event-card *ngFor="let event of events; let i = index" [index]="i" [historicEvent]="event"></app-event-card>
 </div>

@@ -5,8 +5,13 @@
 /* Set a background color */
 
 body {
-  background-color: #474e5d;
+  background-color: #5d6472;
   font-family: Helvetica, sans-serif;
+}
+
+.page-title{
+  text-align: center;
+  color: #FFF;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -176,15 +181,21 @@ body {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #9b9b9b;
+    display: block;
+    transition: 0.3s;
+    &.bottom {
+      font-size: 15px;
+      position: absolute;
+      bottom: 15px;
+      border-top: 1px solid #474e5d;
+      width: 100%
+    }
+  }
 }
 
 .sidenav a:hover {
@@ -207,6 +218,10 @@ body {
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
