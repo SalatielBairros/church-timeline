@@ -18,6 +18,7 @@ export class FilterData {
       this.EndYear = 2020;
     }
     filter += `((Year ge ${this.StartYear}) and (Year le ${this.EndYear}))`;
+    filter += '&$orderby=Year asc';    
 
     return filter;
   }
