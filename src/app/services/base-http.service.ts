@@ -3,6 +3,7 @@ import { HttpHeaders, HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { HistoricEvent } from '../api/historic-event.model';
 import { WebApiResponseList } from '../api/webapi-responselist.model';
+import { FilterData } from '../api/filter-data.model';
 
 @Injectable({
   providedIn: 'root'
@@ -27,7 +28,10 @@ export class BaseHttpService {
     return this.http.get<HistoricEvent>(url, this.httpOptions);
   }
 
-  public getAll(): Observable<WebApiResponseList<HistoricEvent>> {
-    return this.http.get<WebApiResponseList<HistoricEvent>>(this.baseUrl, this.httpOptions);
+  public getAll(filter: FilterData): Observable<WebApiResponseList<HistoricEvent>> {
+    filter = filter || new FilterData();
+
+    const url = `${this.baseUrl}?${filter.getOdataFilter()}`;
+    return this.http.get<WebApiResponseList<HistoricEvent>>(url, this.httpOptions);
   }
 }
