@@ -23,7 +23,7 @@ export class EventCardComponent implements OnInit {
     }
   }
 
-  get index():number{
+  get index(): number {
     return this._index;
   }
 

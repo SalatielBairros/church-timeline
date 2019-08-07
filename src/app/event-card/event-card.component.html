@@ -4,6 +4,6 @@
     <span class="title">{{historicEvent.Title}}</span>
     <p class="description">{{historicEvent.Description}}</p>
     <a href="{{historicEvent.Reference}}" target="_blank" class="reference-link">Saiba mais</a>
-    <span class="tag">{{historicEvent.Tag}}</span>
+    <span class="tag {{historicEvent.Tag | lowercase}}">{{historicEvent.Tag}}</span>
   </div>
 </div>
