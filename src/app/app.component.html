@@ -3,11 +3,12 @@
   <div class="sidebar-header">
     <h4>História do Cristianismo</h4>
   </div>
-  <a class="menu-item" (click)="navigate('timeline/completa')">Timeline Completa</a>
-  <a class="menu-item" (click)="navigate('timeline/antigo')">Igreja Antiga</a>
-  <a class="menu-item" (click)="navigate('timeline/medieval')">Igreja Medieval</a>
-  <a class="menu-item" (click)="navigate('timeline/reforma')">Reforma Protestante</a>
-  <a class="menu-item" (click)="navigate('timeline/modernidade')">Modernidade</a>
+  <a class="menu-item {{selectedMenu[0]}}" (click)="navigate('timeline/completa', 0)">Timeline Completa</a>
+  <a class="menu-item subitem {{selectedMenu[1]}}" (click)="navigate('timeline/antigo', 1)">Igreja Antiga</a>
+  <a class="menu-item subitem {{selectedMenu[2]}}" (click)="navigate('timeline/medieval', 2)">Igreja Medieval</a>
+  <a class="menu-item subitem {{selectedMenu[3]}}" (click)="navigate('timeline/reforma', 3)">Reforma Protestante</a>
+  <a class="menu-item subitem {{selectedMenu[4]}}" (click)="navigate('timeline/modernidade', 4)">Modernidade</a>
+  <a class="menu-item  {{selectedMenu[5]}}" (click)="navigate('referencias', 5)">Referências</a>
   <a href="https://medium.com/salatiel-bairros/" class="bottom" target="_blank">Salatiel Bairros</a>
 </div>
 

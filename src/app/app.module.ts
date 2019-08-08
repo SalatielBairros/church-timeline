@@ -8,12 +8,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { TimelineComponent } from './timeline/timeline.component';
+import { ReferencesComponent } from './references/references.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EventCardComponent,
-    TimelineComponent
+    TimelineComponent,
+    ReferencesComponent
   ],
   imports: [
     BrowserModule,
