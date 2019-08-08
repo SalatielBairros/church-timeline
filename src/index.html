@@ -12,27 +12,8 @@
 
 <body>
   <div id="background"></div>
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="sidebar-header">
-      <h4>História do Cristianismo</h4>
-      <a href="http://conde.org.br" target="_blank">IB Conde de Porto Alegre</a>
-    </div>
-    <a class="menu-item" href="timeline/completa">Timeline Completa</a>
-    <a class="menu-item" href="timeline/antigo">Igreja Antiga</a>
-    <a class="menu-item" href="timeline/medieval">Igreja Medieval</a>
-    <a class="menu-item" href="timeline/reforma">Reforma Protestante</a>
-    <a class="menu-item" href="timeline/modernidade">Modernidade</a>
-    <a href="https://medium.com/salatiel-bairros/" class="bottom" target="_blank">Salatiel Bairros</a>
-  </div>
-
-  <div id="main" class="navbar">
-    <span id="hamburger" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
-  </div>
-
-  <div style="margin-top: 100px;">
-    <app-root></app-root>
-  </div>
+  
+  <app-root></app-root>
   <script>
     function openNav() {
       document.getElementById("mySidenav").style.width = "220px";

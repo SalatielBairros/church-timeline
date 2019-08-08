@@ -1,13 +1,20 @@
-<h1 class="page-title">História Cristianismo</h1>
-<h4 class="page-title">{{subtitle}}</h4>
-<form class="search-form">
-  <div class="search">
-    <span class="fa fa-search"></span>
-    <input type="text" placeholder="Palavra-chave" #search class="search" [value]="filter.KeyWord"
-      (keydown.enter)="getEvents(search.value)">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="sidebar-header">
+    <h4>História do Cristianismo</h4>
   </div>
-</form>
+  <a class="menu-item" (click)="navigate('timeline/completa')">Timeline Completa</a>
+  <a class="menu-item" (click)="navigate('timeline/antigo')">Igreja Antiga</a>
+  <a class="menu-item" (click)="navigate('timeline/medieval')">Igreja Medieval</a>
+  <a class="menu-item" (click)="navigate('timeline/reforma')">Reforma Protestante</a>
+  <a class="menu-item" (click)="navigate('timeline/modernidade')">Modernidade</a>
+  <a href="https://medium.com/salatiel-bairros/" class="bottom" target="_blank">Salatiel Bairros</a>
+</div>
 
-<div class="timeline">
-  <app-event-card *ngFor="let event of events; let i = index" [index]="i" [historicEvent]="event"></app-event-card>
+<div id="main" class="navbar">
+  <span id="hamburger" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+</div>
+
+<div style="margin-top: 100px;">
+  <router-outlet></router-outlet>
 </div>

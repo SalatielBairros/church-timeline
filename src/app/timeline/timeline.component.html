@@ -1,0 +1,13 @@
+<h1 class="page-title">História Cristianismo</h1>
+<h4 class="page-title">{{subtitle}}</h4>
+<form class="search-form">
+  <div class="search">
+    <span class="fa fa-search"></span>
+    <input type="text" placeholder="Palavra-chave" #search class="search" [value]="filter.KeyWord"
+      (keydown.enter)="getEvents(search.value)">
+  </div>
+</form>
+
+<div class="timeline">
+  <app-event-card *ngFor="let event of events; let i = index" [index]="i" [historicEvent]="event"></app-event-card>
+</div>

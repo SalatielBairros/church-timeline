@@ -7,11 +7,13 @@ import { EventCardComponent } from './event-card/event-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { TimelineComponent } from './timeline/timeline.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EventCardComponent
+    EventCardComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,
