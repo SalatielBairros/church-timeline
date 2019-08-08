@@ -1,12 +1,13 @@
+<h1 class="page-title">História Cristianismo</h1>
+<h4 class="page-title">{{subtitle}}</h4>
 <form class="search-form">
-  <input type="text" placeholder="Palavra-chave" #search class="search" [value]="filter.KeyWord" (keydown.enter)="setFilters(search.value, start.value, end.value)" >
-  <input type="number" placeholder="Início" class="year" #start [value]="filter.StartYear" (keydown.enter)="setFilters(search.value, start.value, end.value)">
-  <input type="number" max="2020" placeholder="Fim" class="year" #end [value]="filter.EndYear" (keydown.enter)="setFilters(search.value, start.value, end.value)">
-  <input type="button" value="Filtrar" class="button" (click)="setFilters(search.value, start.value, end.value)">
+  <div class="search">
+    <span class="fa fa-search"></span>
+    <input type="text" placeholder="Palavra-chave" #search class="search" [value]="filter.KeyWord"
+      (keydown.enter)="getEvents(search.value)">
+  </div>
 </form>
 
 <div class="timeline">
   <app-event-card *ngFor="let event of events; let i = index" [index]="i" [historicEvent]="event"></app-event-card>
 </div>
-
-<router-outlet></router-outlet>
