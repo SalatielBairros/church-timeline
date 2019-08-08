@@ -6,9 +6,9 @@
 
 body {
   background-color: #474e5d;
-  font-family: Helvetica, sans-serif;  
-
-  #background{
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  #background {
     background-image: url('assets/background.jpg');
     position: fixed;
     top: 0;
@@ -18,14 +18,29 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     opacity: 0.4;
-    filter:alpha(opacity=40);
+    filter: alpha(opacity=40);
     z-index: -1;
   }
 }
 
-.page-title{
+.navbar {
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  height: 60px;
+  transition: margin-left .5s;
+  padding: 8px 16px;
+  z-index: 1;
+  color: #FFF;
+}
+
+.page-title {
   text-align: center;
   color: #FFF;
+  vertical-align: text-bottom;
+  text-align: center;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -222,13 +237,6 @@ body {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-  z-index: 1;
-  color: #FFF;
 }
 
 @media screen and (max-height: 450px) {

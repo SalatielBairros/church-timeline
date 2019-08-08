@@ -20,23 +20,25 @@
     <a href="https://medium.com/salatiel-bairros/" class="bottom" target="_blank">Salatiel Bairros</a>
   </div>
 
-  <div id="main">
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <div id="main" class="navbar">
+    <span id="hamburger" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
   </div>
 
-  <h1 class="page-title">Timeline Cristianismo</h1>
-
-  <app-root></app-root>
-
+  <div style="margin-top: 100px;">
+    <h1 class="page-title">Timeline Cristianismo</h1>
+    <app-root></app-root>
+  </div>
   <script>
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
       document.getElementById("main").style.marginLeft = "250px";
+      document.getElementById("hamburger").style.display = "none";
     }
 
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
       document.getElementById("main").style.marginLeft = "0";
+      document.getElementById("hamburger").style.display = "inline";
     }
   </script>
 </body>
